@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-menta-suave: #f2f7f4;          /* Fondo menta claro de toda la pantalla */
+    --bg-navbar-clarito: #dcebe1;       /* Verde claro para la barra superior */
+    --verde-foto-oscuro: #0e3024;       /* Verde oscuro (foto y botones activos) */
+    --verde-foto-hover: #051a13;        /* Hover para botones */
+    --verde-card-oscuro: #12251d;      /* Verde oscuro de las 2 tarjetas de proyectos */
+    --subcard-dark-bg: #0b1a14;        /* Fondo interno de sub-tarjetas en proyectos */
+    --mint-accent: #48c79c;            /* Verde menta brillante */
+    --texto-cuerpo: #2d4036;            /* Texto principal */
+    --amarillo-border: #e2a036;        /* Borde lateral amarillo */
+    --blanco-card: #ffffff;             /* Fondo de tarjetas blancas */
+    --linea-divisora: #dce5e0;
+}
+
+html, body {
+    background-color: #f2f7f4 !important; /* Fuerza fondo claro general */
+    background: #f2f7f4 !important;
+    color: #def9f0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* --- BARRA SUPERIOR DE NAVEGACIÓN --- */
+.navbar-custom {
+    background-color: var(--bg-navbar-clarito) !important;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgba(14, 48, 36, 0.08);
+}
+
+.nav-link-custom {
+    color: var(--verde-foto-oscuro) !important;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-bottom: 4px !important;
+    position: relative;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+    color: var(--verde-foto-oscuro) !important;
+    opacity: 1;
+}
+
+.nav-link-custom.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--verde-foto-oscuro);
+    border-radius: 2px;
+}
+
+/* --- FOTO DE PERFIL --- */
+.profile-img-wrapper {
+    display: inline-block;
+    padding: 5px;
+    background: var(--verde-foto-oscuro);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(14, 48, 36, 0.15);
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center top; 
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    display: block;
+}
+
+/* --- TEXTOS PRINCIPALES --- */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--verde-foto-oscuro);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--verde-foto-oscuro);
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    color: var(--texto-cuerpo);
+}
+
+/* --- BOTONES DE INICIO --- */
+.btn-verde-solido {
+    background-color: var(--verde-foto-oscuro) !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.8rem;
+    border-radius: 12px;
+    border: 2px solid var(--verde-foto-oscuro) !important;
+    transition: all 0.25s ease;
+}
+
+.btn-verde-solido:hover,
+.btn-verde-solido:active,
+.btn-verde-solido:focus {
+    background-color: var(--verde-foto-hover) !important;
+    border-color: var(--verde-foto-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(14, 48, 36, 0.3);
+}
+
+.btn-verde-borde {
+    background-color: transparent !important;
+    color: var(--verde-foto-oscuro) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.8rem;
+    border-radius: 12px;
+    border: 2px solid var(--verde-foto-oscuro) !important;
+    transition: all 0.25s ease;
+}
+
+.btn-verde-borde:hover,
+.btn-verde-borde:active,
+.btn-verde-borde:focus {
+    background-color: var(--verde-foto-oscuro) !important;
+    color: #ffffff !important;
+    border-color: var(--verde-foto-oscuro) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(14, 48, 36, 0.3);
+}
+
+/* --- TARJETA BLANCA DE INICIO --- */
+.card-blanca-info {
+    background-color: var(--blanco-card);
+    border-radius: 24px;
+    padding: 2.2rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.section-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--verde-foto-oscuro);
+    margin-bottom: 0.35rem;
+}
+
+.section-card-text {
+    font-size: 1.02rem;
+    color: var(--texto-cuerpo);
+    margin-bottom: 0;
+}
+
+.divisor-linea {
+    border: 0;
+    border-top: 1px solid var(--linea-divisora);
+    margin: 1.25rem 0;
+}
+
+/* --- ÚNICAS TARJETAS OSCURAS (EN PROYECTOS) --- */
+.dark-card {
+    background-color: var(--verde-card-oscuro) !important;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.card-yellow-border {
+    border-left: 5px solid var(--amarillo-border) !important;
+}
+
+.repo-header {
+    font-family: monospace;
+    font-size: 0.88rem;
+    color: #94b5a6;
+}
+
+.card-project-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.card-project-desc {
+    color: #94b5a6;
+    font-size: 0.98rem;
+}
+
+.project-bullets {
+    color: #94b5a6;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.project-bullets li {
+    margin-bottom: 0.4rem;
+}
+
+.subcard-item {
+    background-color: var(--subcard-dark-bg);
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.btn-mint-solid {
+    background-color: var(--mint-accent) !important;
+    color: #071711 !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.6rem;
+    border-radius: 14px;
+    border: none !important;
+    transition: all 0.2s ease;
+}
+
+.btn-mint-solid:hover {
+    background-color: #36b88d !important;
+    transform: translateY(-2px);
+}
+
+/* --- PARRILLA DE TECNOLOGÍAS (SOBRE FONDO CLARO) --- */
+.tech-grid-card {
+    background-color: #ffffff !important;
+    border-radius: 16px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--verde-foto-oscuro);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.tech-icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.bg-purple-icon { background-color: #68217a; }
+.bg-indigo-icon { background-color: #512bd4; }
+.bg-red-icon { background-color: #cc292b; }
+.bg-blue-icon { background-color: #306998; }
+.bg-yellow-icon { background-color: #d4a017; color: #000; }
+.bg-green-icon { background-color: #13aa52; }
+.bg-excel-icon { background-color: #107c41; }
+/* =======================================================
+   DECORACIÓN BOTÁNICA DE HOJAS (EN COLOR Y EQUILIBRADA)
+   ======================================================= */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.85; /* Da buena vivacidad al verde sin molestar la lectura */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' fill='none'><g transform='translate(-20, -20)'><path d='M0,0 C60,100 120,180 280,260' stroke='%230e3024' stroke-width='4' stroke-linecap='round'/><path d='M30,40 Q90,10 140,50 Q80,100 30,40 Z' fill='%232e7d58' stroke='%230e3024' stroke-width='2'/><path d='M30,40 Q85,45 140,50' stroke='%23194a32' stroke-width='2'/><path d='M80,110 Q160,70 210,120 Q140,170 80,110 Z' fill='%233bb886' stroke='%230e3024' stroke-width='2'/><path d='M80,110 Q145,115 210,120' stroke='%231f694a' stroke-width='2'/><path d='M140,180 Q230,150 270,210 Q200,260 140,180 Z' fill='%23226344' stroke='%230e3024' stroke-width='2'/><path d='M140,180 Q205,195 270,210' stroke='%230e3024' stroke-width='2'/><path d='M10,100 Q70,120 90,180 Q20,170 10,100 Z' fill='%2348c79c' stroke='%230e3024' stroke-width='2'/><path d='M70,190 Q140,220 160,290 Q80,270 70,190 Z' fill='%232e7d58' stroke='%230e3024' stroke-width='2'/><path d='M130,10 Q180,60 170,130 Q110,90 130,10 Z' fill='%231b5239' stroke='%230e3024' stroke-width='2'/><path d='M200,80 Q260,110 270,170 Q200,150 200,80 Z' fill='%2363d6aa' stroke='%230e3024' stroke-width='2'/></g></svg>");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 320px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.85;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 350' fill='none'><g transform='translate(20, 20)'><path d='M370,370 C310,270 250,190 90,110' stroke='%230e3024' stroke-width='4' stroke-linecap='round'/><path d='M340,330 Q280,360 230,320 Q290,270 340,330 Z' fill='%232e7d58' stroke='%230e3024' stroke-width='2'/><path d='M340,330 Q285,325 230,320' stroke='%23194a32' stroke-width='2'/><path d='M290,260 Q210,300 160,250 Q230,200 290,260 Z' fill='%233bb886' stroke='%230e3024' stroke-width='2'/><path d='M290,260 Q225,255 160,250' stroke='%231f694a' stroke-width='2'/><path d='M230,190 Q140,220 100,160 Q170,110 230,190 Z' fill='%23226344' stroke='%230e3024' stroke-width='2'/><path d='M230,190 Q165,175 100,160' stroke='%230e3024' stroke-width='2'/><path d='M360,270 Q300,250 280,190 Q350,200 360,270 Z' fill='%2348c79c' stroke='%230e3024' stroke-width='2'/><path d='M300,180 Q230,150 210,80 Q290,100 300,180 Z' fill='%232e7d58' stroke='%230e3024' stroke-width='2'/><path d='M240,360 Q190,310 200,240 Q260,280 240,360 Z' fill='%231b5239' stroke='%230e3024' stroke-width='2'/><path d='M170,290 Q110,260 100,200 Q170,220 170,290 Z' fill='%2363d6aa' stroke='%230e3024' stroke-width='2'/></g></svg>");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanca Isabel Zapata - Portafolio</title>
+    <!-- Bootstrap, FontAwesome y CSS Personalizado -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Menú Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+        <div class="container justify-content-end">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom" href="#" data-toggle="modal" data-target="#modalSobreMi">Sobre mí</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <main class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                
+                <!-- Foto de Perfil -->
+                <div class="mb-3">
+                    <div class="profile-img-wrapper">
+                        <img src="img/Isabel123.jpeg" alt="Foto de Blanca Isabel Zapata Gómez" 
+                             class="profile-img" 
+                             onerror="this.src='https://via.placeholder.com/140/0e3024/ffffff?text=Isabel123'">
+                    </div>
+                </div>
+
+                <!-- Nombre Principal -->
+                <h1 class="hero-title mb-4">
+                    Blanca Isabel<br>
+                    Zapata Gómez
+                </h1>
+
+                <!-- Subtítulo y Párrafo exactos de tu pantalla -->
+                <p class="hero-subtitle mb-3">
+                    Desarrollo software con enfoque funcional y visión administrativa.
+                </p>
+
+                <p class="hero-description mb-4">
+                    Integro Software, innovación y pensamiento analítico. Diseño soluciones digitales donde la funcionalidad y la organización trabajan juntas.
+                </p>
+
+                <!-- Botones de Acción principales -->
+                <div class="d-flex flex-wrap gap-2 mb-5">
+                    <a href="projects.html" class="btn btn-verde-solido mr-2 mb-2">Ver proyectos</a>
+                    
+                    <a href="https://wa.me/573208082045?text=Hola%20Isabel,%20vi%20tu%20portafolio%20y%20deseo%20contactarte." 
+                       target="_blank" 
+                       class="btn btn-verde-borde mr-2 mb-2">
+                        <i class="fab fa-whatsapp mr-1"></i> Escríbeme
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/isabel-zapata-g%C3%B3mez-34324b182" 
+                       target="_blank" 
+                       class="btn btn-verde-borde mr-2 mb-2">
+                        <i class="fab fa-linkedin mr-1"></i> LinkedIn
+                    </a>
+
+                    <a href="docs/Hoja_de_Vida_Isabel_Zapata.pdf" 
+                       target="_blank" 
+                       download 
+                       class="btn btn-verde-borde mb-2">
+                        <i class="fas fa-file-pdf mr-1"></i> Descargar CV
+                    </a>
+                </div>
+
+                <!-- Tarjeta 1: Información Profesional Bilingüe (exacta a tu foto) -->
+                <div class="card-blanca-info mb-4">
+                    <div>
+                        <h3 class="section-card-title">Ahora</h3>
+                        <p class="section-card-text mb-1">Ingeniería en Desarrollo de Software, 7.° semestre.</p>
+                        <small class="text-muted d-block">Software Development Engineering | 7th Semester Student.</small>
+                    </div>
+
+                    <hr class="divisor-linea">
+
+                    <div>
+                        <h3 class="section-card-title">Antes</h3>
+                        <p class="section-card-text">Técnica Asistente Administrativa y Bachiller Académica.</p>
+                    </div>
+
+                    <hr class="divisor-linea">
+
+                    <div>
+                        <h3 class="section-card-title">Lo que aporto</h3>
+                        <p class="section-card-text mb-2">
+                            compromiso, responsabilidad y una mentalidad orientada a encontrar soluciones. Combino mis conocimientos administrativos con mi formación en desarrollo de software para contribuir a proyectos organizados, funcionales y eficientes. Me caracterizo por mi capacidad de aprendizaje, comunicación y disposición para asumir nuevos retos.
+                        </p>
+                        <small class="text-muted d-block">
+                            I bring commitment, responsibility, and a solution-oriented mindset. I combine my administrative knowledge with my software development education to contribute to organized, functional, and efficient projects. I am characterized by my ability to learn, communicate effectively, and take on new challenges.
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Datos Personales y de Contacto -->
+                <div class="card-blanca-info mb-5">
+                    <h3 class="section-card-title mb-4" style="font-size: 1.3rem;">
+                        <i class="fas fa-id-card mr-2" style="color: #0e3024;"></i>Información personal y de contacto
+                    </h3>
+
+                    <div class="row text-left">
+                        <div class="col-sm-6 mb-3">
+                            <small class="text-muted font-weight-bold d-block text-uppercase">Disponibilidad laboral</small>
+                            <span class="font-weight-bold" style="color: #0e3024; font-size: 1.05rem;">Abierta a prácticas profesionales y oportunidades laborales remotas o presenciales</span>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <small class="text-muted font-weight-bold d-block text-uppercase">Ubicación</small>
+                            <span class="font-weight-bold" style="color: #0e3024; font-size: 1.05rem;">Medellín, Antioquia Colombia</span>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <small class="text-muted font-weight-bold d-block text-uppercase">Teléfono / WhatsApp</small>
+                            <a href="https://wa.me/573208082045" target="_blank" class="font-weight-bold" style="color: #0e3024; font-size: 1.05rem; text-decoration: underline;">
+                                +57 320 808 2045
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <small class="text-muted font-weight-bold d-block text-uppercase">Correo Electrónico</small>
+                            <a href="mailto:tu-correo@ejemplo.com" class="font-weight-bold" style="color: #0e3024; font-size: 1.05rem; text-decoration: underline;">
+                                ing.isabel.zapata.dev@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- CARTA FLOTANTE DE PRESENTACIÓN (SOBRE MÍ) -->
+    <div class="modal fade" id="modalSobreMi" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 24px; border: none; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.25);">
+                
+                <div class="modal-header p-4 text-white" style="background-color: #0e3024;">
+                    <h4 class="modal-title font-weight-bold mb-0">
+                        <i class="fas fa-envelope-open-text mr-2" style="color: #48c79c;"></i>Carta de Presentación — Sobre mí
+                    </h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body p-4 p-md-5" style="background-color: #f2f7f4; color: #2d4036; font-size: 1.02rem; line-height: 1.75;">
+                    
+                    <p class="lead font-weight-bold mb-4" style="color: #0e3024; font-size: 1.15rem;">
+                        Soy Blanca Isabel Zapata Gómez, mamá de dos hijos, técnica asistente administrativa y estudiante de séptimo semestre de Ingeniería en Desarrollo de Software.
+                    </p>
+
+                    <p class="mb-3">
+                        Me considero una persona perseverante, curiosa y comprometida con su crecimiento. Mi historia académica y personal me ha enseñado que los grandes resultados se construyen con disciplina, determinación y disposición para aprender constantemente.
+                    </p>
+
+                    <p class="mb-3">
+                        A lo largo de mi formación he descubierto que disfruto comprender cómo funcionan las cosas, analizar problemas y encontrar maneras de resolverlos. Me apasiona la tecnología, especialmente el desarrollo de soluciones web que no solo cumplan una función, sino que respondan a necesidades reales y faciliten la vida de las personas.
+                    </p>
+
+                    <p class="mb-3">
+                        Mi experiencia en el ámbito administrativo me ha permitido desarrollar una visión organizada, responsable y orientada al detalle. Hoy busco integrar esas habilidades con el pensamiento lógico y creativo de la ingeniería, construyendo un perfil profesional que combine tecnología, funcionalidad y sentido humano.
+                    </p>
+
+                    <p class="mb-3">
+                        Creo en el aprendizaje continuo, en la capacidad de reinventarse y en el valor de hacer las cosas con propósito. No pretendo saberlo todo; me interesa seguir aprendiendo, asumir nuevos retos y convertir cada experiencia en una oportunidad para crecer.
+                    </p>
+
+                    <p class="mb-4">
+                        Mi propósito es desarrollarme como ingeniera de software, participar en proyectos que aporten valor y construir soluciones tecnológicas de las que pueda sentirme orgullosa.
+                    </p>
+
+                    <div class="p-3 my-2 rounded text-center" style="background-color: #dcebe1; border-left: 5px solid #0e3024; font-style: italic; color: #0e3024; font-weight: 600;">
+                        "Detrás de cada proyecto hay una idea, detrás de cada idea hay un propósito y detrás de cada logro hay constancia."
+                    </div>
+
+                </div>
+
+                <div class="modal-footer p-3" style="background-color: #ffffff; border-top: 1px solid #dce5e0;">
+                    <button type="button" class="btn btn-verde-solido btn-sm" data-dismiss="modal">Cerrar carta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

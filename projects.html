@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis proyectos - Blanca Isabel Zapata</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Menú Superior (Verde claro) -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+        <div class="container justify-content-end">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom active" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-link-custom" href="index.html" data-toggle="modal" data-target="#modalSobreMi">Sobre mí</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal (Fondo Menta Claro) -->
+    <main class="container py-4">
+        
+        <!-- Encabezado -->
+        <div class="mb-4">
+            <h1 class="font-weight-bold mb-2" style="font-size: 2.4rem; color: #0e3024;">Mis proyectos</h1>
+            <p class="hero-description" style="max-width: 650px;">
+                Desarrollo de software, bases de datos y aplicaciones web, con una base sólida en gestión administrativa.
+            </p>
+        </div>
+
+        <!-- DISPOSICIÓN A DOS COLUMNAS CON TARJETAS VERDES OSCURAS -->
+        <div class="row align-items-stretch mb-5">
+            
+            <!-- COLUMNA IZQUIERDA: GITHUB PROJECT -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="dark-card p-4 d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <div class="repo-header mb-3">
+                            <i class="fab fa-github mr-1"></i>
+                            github.com/ing-isabel / <strong>web_Inventario</strong>
+                        </div>
+
+                        <h3 class="card-project-title mb-3">web_Inventario</h3>
+
+                        <p class="card-project-desc mb-3">
+                            Sistema de gestión de inventarios (WebAppProductsandCategories) con una arquitectura estructurada.
+                        </p>
+
+                        <ul class="project-bullets mb-4">
+                            <li>CRUD completo de categorías y productos</li>
+                            <li>Base de datos relacional en SQL Server</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/ing-isabel/web_Inventario" target="_blank" class="btn btn-mint-solid btn-block text-center">
+                            <i class="fab fa-github mr-2"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: TÉCNICA ASISTENTE ADMINISTRATIVA -->
+            <div class="col-lg-6">
+                <div class="dark-card card-yellow-border p-4 d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <h3 class="card-project-title mb-2">Técnica Asistente Administrativa</h3>
+                        <p class="card-project-desc mb-4">
+                            Mi formación base. Hoy la combino con el desarrollo de software para crear herramientas de gestión que sí funcionan en una oficina.
+                        </p>
+
+                        <div class="row row-cols-2 g-2 mb-4">
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Inventarios</h6>
+                                    <small style="color: #94b5a6;">Entradas, salidas y existencias</small>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Rotulación</h6>
+                                    <small style="color: #94b5a6;">Identificación de productos y archivos</small>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Manejo de agenda</h6>
+                                    <small style="color: #94b5a6;">Citas, reuniones y pendientes</small>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Estadísticas</h6>
+                                    <small style="color: #94b5a6;">Análisis de datos para reportes</small>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Excel avanzado</h6>
+                                    <small style="color: #94b5a6;">Fórmulas, tablas dinámicas, reportes</small>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="subcard-item">
+                                    <h6 class="mb-1 font-weight-bold text-white">Apoyo administrativo</h6>
+                                    <small style="color: #94b5a6;">Documentación y organización</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-mint-solid btn-block" data-toggle="modal" data-target="#techDocModal">
+                            Abrir documento de tecnologías y conocimientos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN INFERIOR: TECNOLOGÍAS QUE MANEJO -->
+        <div class="pt-2 mb-5">
+            <h3 class="font-weight-bold mb-4" style="font-size: 1.5rem; color: #0e3024;">Tecnologías que manejo</h3>
+
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-purple-icon">C#</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">C#</h6>
+                            <small class="text-muted">Lenguaje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-indigo-icon">.NET</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">.NET</h6>
+                            <small class="text-muted">Framework</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-red-icon">SQL</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">SQL Server</h6>
+                            <small class="text-muted">Base de datos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-blue-icon">Py</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Python</h6>
+                            <small class="text-muted">Lenguaje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-yellow-icon">BI</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Power BI</h6>
+                            <small class="text-muted">Análisis</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-green-icon">M</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">MongoDB</h6>
+                            <small class="text-muted">NoSQL</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="tech-grid-card">
+                        <div class="tech-icon-box bg-excel-icon">X</div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Excel</h6>
+                            <small class="text-muted">Avanzado</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal Documento Tecnologías -->
+    <div class="modal fade" id="techDocModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-white" style="background-color: #12251d; border-radius: 18px;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-weight-bold">Tecnologías y Conocimientos</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="color: #94b5a6;">
+                        Resumen técnico de competencias aplicadas en desarrollo web, análisis de datos y procesos administrativos organizacionales de Blanca Isabel Zapata Gómez.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARTA FLOTANTE (MODAL SOBRE MÍ) -->
+    <div class="modal fade" id="modalSobreMi" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 24px; border: none; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.25);">
+                
+                <div class="modal-header p-4 text-white" style="background-color: #0e3024;">
+                    <h4 class="modal-title font-weight-bold mb-0">
+                        <i class="fas fa-envelope-open-text mr-2" style="color: #48c79c;"></i>Carta de Presentación — Sobre mí
+                    </h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body p-4 p-md-5" style="background-color: #f2f7f4; color: #2d4036; font-size: 1.02rem; line-height: 1.75;">
+                    
+                    <p class="lead font-weight-bold mb-4" style="color: #0e3024; font-size: 1.15rem;">
+                        Soy Blanca Isabel Zapata Gómez, mamá de dos hijos, técnica asistente administrativa y estudiante de séptimo semestre de Ingeniería en Desarrollo de Software.
+                    </p>
+
+                    <p class="mb-3">
+                        Me considero una persona perseverante, curiosa y comprometida con su crecimiento. Mi historia académica y personal me ha enseñado que los grandes resultados se construyen con disciplina, determinación y disposición para aprender constantemente.
+                    </p>
+
+                    <p class="mb-3">
+                        A lo largo de mi formación he descubierto que disfruto comprender cómo funcionan las cosas, analizar problemas y encontrar maneras de resolverlos. Me apasiona la tecnología, especialmente el desarrollo de soluciones web que no solo cumplan una función, sino que respondan a necesidades reales y faciliten la vida de las personas.
+                    </p>
+
+                    <p class="mb-3">
+                        Mi experiencia en el ámbito administrativo me ha permitido desarrollar una visión organizada, responsable y orientada al detalle. Hoy busco integrar esas habilidades con el pensamiento lógico y creativo de la ingeniería, construyendo un perfil profesional que combine tecnología, funcionalidad y sentido humano.
+                    </p>
+
+                    <p class="mb-3">
+                        Creo en el aprendizaje continuo, en la capacidad de reinventarse y en el valor de hacer las cosas con propósito. No pretendo saberlo todo; me interesa seguir aprendiendo, asumir nuevos retos y convertir cada experiencia en una oportunidad para crecer.
+                    </p>
+
+                    <p class="mb-4">
+                        Mi propósito es desarrollarme como ingeniera de software, participar en proyectos que aporten valor y construir soluciones tecnológicas de las que pueda sentirme orgullosa.
+                    </p>
+
+                    <div class="p-3 my-2 rounded text-center" style="background-color: #dcebe1; border-left: 5px solid #0e3024; font-style: italic; color: #0e3024; font-weight: 600;">
+                        "Detrás de cada proyecto hay una idea, detrás de cada idea hay un propósito y detrás de cada logro hay constancia."
+                    </div>
+
+                </div>
+
+                <div class="modal-footer p-3" style="background-color: #ffffff; border-top: 1px solid #dce5e0;">
+                    <button type="button" class="btn btn-verde-solido btn-sm" data-dismiss="modal">Cerrar carta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
